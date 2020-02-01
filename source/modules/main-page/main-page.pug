@@ -1,0 +1,62 @@
+include ../features-list/features-list
+include ../quick-start/quick-start
+include ../container/container
+include ../header-presentation/header-presentation
+
+mixin main-page(data)
+  .main-page.main-page--padding&attributes(attributes)
+
+    +container()
+      .main-header 
+        h1 Frequently Asked Questions
+      
+    +container().main-page__body
+      section.main-page__section.main-page__section_faq
+        .faq-card
+          .faq-card__top
+            .faq-card__icon
+              i.icon-name.reload
+            .faq-card__name Subscriptions
+          ul.faq-card__list
+            li
+              a What does it mean to cancel a subscription via My Services?
+            li
+              a What subscriptions can I cancel through My Services?
+            li
+              a How do I know that the subscriptions I cancel through My Services are actually terminated?
+            li
+              a What happens if I have a binding period left when I cancel a subscription via My Services?
+        .faq-card
+          .faq-card__top
+            .faq-card__icon
+              i.icon-name.ordering
+            .faq-card__name Subscriptions
+          ul.faq-card__list
+            li
+              a What does it mean to cancel a subscription via My Services?
+            li
+              a What subscriptions can I cancel through My Services?
+            li
+              a How do I know that the subscriptions I cancel through My Services are actually terminated?
+            li
+              a What happens if I have a binding period left when I cancel a subscription via My Services?
+        .faq-card
+          .faq-card__top
+            .faq-card__icon
+              i.icon-name.shield
+            .faq-card__name Subscriptions
+          ul.faq-card__list
+            li
+              a Why do I need Mobile Bank ID to use My Services?
+            li
+              a Is It Safe to Use My Services?
+
+  .cta-section
+    +container()
+      .cta-section__left
+        h3 Ready to get started?
+        p Sign up and start now!
+      .cta-section__right
+        a.cta-section__button(href="#")
+          div.bankid_logo_white
+          span Login with bankid

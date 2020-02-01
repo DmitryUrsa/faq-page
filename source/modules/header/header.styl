@@ -1,0 +1,60 @@
+.header
+	background-color #fff
+
+	&__container
+		display flex
+		align-items center
+		padding 50px 230px
+
+	&__logo
+		margin-right 5em
+
+	&__menu
+		margin-right auto
+		margin-left auto
+
+		+below($media-screen-tablet)
+			display none
+
+	&__login
+		display inline-flex
+		align-items center
+		margin-left 5em
+		cursor pointer
+
+		&
+		&:visited
+			color #3392c9
+			text-decoration none
+			font-weight 700
+			font-size 32px
+
+		&:hover
+			color #000000
+
+		p
+			margin 0
+			margin-left 35px
+			cursor pointer
+
+	&__mobile-menu-trigger
+		display none
+		margin-left auto
+
+		+below($media-screen-tablet)
+			display block
+
+	&__github-button
+		&
+		&:visited
+			margin-left auto
+			padding 0.5em
+			color $blue-6
+
+			+below($media-screen-tablet)
+				display none
+
+		&:hover
+			color $blue-8
+
+sprites($spritesheet_sprites)

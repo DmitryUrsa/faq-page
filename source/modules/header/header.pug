@@ -1,0 +1,22 @@
+include ../logo/logo
+include ../button/button
+include ../main-menu/main-menu
+include ../header-presentation/header-presentation
+include ../mobile-menu-trigger/mobile-menu-trigger
+include ../container/container
+
+mixin header(data)
+  header.header&attributes(attributes)
+    .header__container
+      .header__logo
+        +logo()
+
+      .header__menu
+        +main-menu(mainMenu.default)
+
+      a.header__login(href="#")
+        .bankid_logo
+        p Login with BankID
+
+      .header__mobile-menu-trigger
+        +mobile-menu-trigger()

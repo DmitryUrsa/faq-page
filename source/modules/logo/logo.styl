@@ -1,0 +1,31 @@
+.logo
+	&
+	&:visited
+		display flex
+		align-items center
+		text-decoration none
+		line-height 1
+
+	&:hover &__icon
+		transform scale(1.1)
+
+		+below(750px)
+			animation none
+
+	&__name
+		margin-left 15px
+		color $black
+		font-weight 600
+		font-size 50px
+
+		+below($media-screen-desktop)
+			display none
+
+		+below($media-screen-tablet)
+			display block
+
+	&__icon
+		size 60px
+
+		+below(750px)
+			animation heartbeat 2.5s infinite 5s

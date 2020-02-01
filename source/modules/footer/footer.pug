@@ -1,0 +1,37 @@
+include ../icon/icon
+
+mixin footer(data)
+  footer.footer.js-appearing-item&attributes(attributes)
+    +container()
+      .footer-menu
+        .footer-menu-column
+          .footer-menu-column__header Office
+          .footer-menu-colimn__text Lorem Address 11 2200 Vasteras Sweden
+        .footer-menu-column
+          .footer-menu-column__header Contact
+          ul
+            li
+              a(href="#") Chat Support
+            li
+              a(href="#") info@unppsagning.se
+            li
+              a(href="#") +45 000 000-2321
+        .footer-menu-column
+          .footer-menu-column__header Contact
+          ul
+            li
+              a(href="#") How It Works
+            li
+              a(href="#") Security
+            li
+              a(href="#") FAQ
+        .footer-menu-column
+          .footer-menu-column__header Company
+          ul
+            li
+              a(href="#") About us
+            li
+              a(href="#") Terms & Conditions
+            li
+              a(href="#") Privacy Policy
+  .bottom-line 2020 Uppsagning Company. All rights reserved.
